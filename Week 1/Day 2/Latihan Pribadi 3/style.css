@@ -1,0 +1,61 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    align-items: center;
+}
+
+header img {
+    padding-left: 16px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+}
+
+section {
+    margin-top: 70.4px;
+    padding-bottom: 20px;
+    background-image: url("img/sample-pattern.png");
+}
+
+section h1 {
+    text-align: center;
+    padding-top: 21.4333;
+}
+
+#article-list article {
+    padding: 10px;
+}
+
+#article-list {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+footer {
+    /* width: 100%; */
+    background-color: red;
+    padding: 10px;
+    
+}
+
+footer h5 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

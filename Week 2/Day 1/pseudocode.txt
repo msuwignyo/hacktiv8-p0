@@ -1,0 +1,85 @@
+# Newton Second Law
+
+## Algoritma
+
+1. Nilai m sama dengan 600
+2. Nilai a sama dengan 2
+3. Hitung m kali a lalu simpan di F
+
+## Pseudocode
+
+```bash
+SET m WITH 600
+SET a WITH 2
+CALCULATE m TIMES a STORE IN F
+DISPLAY F
+```
+
+# Tahun Kabisat
+
+## Algoritma
+
+1. Tentukan nilai tahun
+2. Jika tahun habis di bagi 4, maka lanjutkan ke baris 3. Jika tidak, maka tampilkan “bukan tahun kabisat”
+3. Jika tahun tidak habis dibagi 100, maka tampilkan “tahun kabisat”. Jika tidak, maka lanjutkan ke baris 4.
+4. Jika tahun habis dibagi 100 dan habis dibagi 400, maka tampilkan “tahun kabisat”. Jika tidak, maka tampilkan “bukan tahun kabisat”.
+
+## Pseudocode
+
+```
+SET tahun WITH 2002
+IF tahun MOD 4 EQUALS 0
+	IF tahun MOD 100 NOT EQUALS 0
+		DISPLAY "tahun kabisat"
+    ELSE IF tahun MOD 100 EQUALS 0 AND tahun MOD 400 EQUALS 0
+    	DISPLAY "tahun kabisat"
+    ELSE
+    	DISPLAY "bukan tahun kabisat"
+    ENDIF
+ELSE
+	DISPLAY "bukan tahun kabisat"
+ENDIF
+```
+
+# Laundry Day
+
+## Algoritma
+
+1. Tentukan nilai jumlah_pakaian 
+2. Ulangi langkah 3 sampai jumlah_pakaian kurang dari 20.
+3. Hitung jumlah_pakaian + 1 lalu simpan di jumlah_pakaian.
+
+## Pseudocode
+
+```
+SET jumlah_pakaian WITH 0
+WHILE jumlah_pakaian < 20:
+	CALCULATE jumlah_pakaian = jumlah_pakaian + 1
+ENDWHILE
+DISPLAY "start laundry"
+```
+
+# Periksa Kuku
+
+## Algoritma
+
+1. Tentukan jumlah_siswa
+2. Lakukan perulangan sebanyak jumlah_siswa untuk baris berikutnya
+3. User input nilai kuku
+4. Jika kuku sama dengan “panjang”, maka tampilkan “hukum!”. Jika tidak, maka tampilkan “puji…”
+
+## Pseudocode
+
+```bash
+SET jumlah_siswa WITH 40
+WHILE jumlah_siswa > 0
+	INPUT kuku
+	IF kuku EQUALS "panjang"
+		DISPLAY "hukum!"
+	ELSE
+		DISPLAY "puji..."
+	ENDIF
+	CALCULATE jumlah_siswa - 1 STORE IN jumlah_siswa
+ENDWHILE
+```
+
