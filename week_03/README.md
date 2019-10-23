@@ -1,0 +1,1 @@
+Day 1 sengaja ga ada karena memang dikhususkan untuk live coding.
