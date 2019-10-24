@@ -1,6 +1,40 @@
 // Logic Challenge - Mencari Modus
+// NOT FINISH YET!
 
 function cariModus(arr) {
+
+    // let dict = null;
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     // inisialisasi dict jika masih null
+    //     if (dict === null) { dict = {}; }
+
+    //     // cek apakah kunci ada?
+    //     // kalau ada, nilainya tambah 1
+    //     // kalau tidak ada, masukkan kunci dan nilai 1
+    //     if (dict[arr[i]] === undefined) {
+    //         dict[arr[i]] = 1;
+    //     } else {
+    //         dict[arr[i]]++;
+    //     }
+    // }
+
+    // console.log(dict);
+    // let max_value = [];
+    // let max_index = [];
+    // for (let key in dict) {
+    //     if (max_value == 0 || max_value[0] < dict[key]) { 
+    //         max_value.push(dict[key]);
+    //         max_index.push(key);
+    //     }
+    // }
+
+    // console.log(max_value);
+    // console.log(max_index);
+    // console.log();
+
+    
+
     let myMap = null;
 
     for (let i = 0; i < arr.length; i++) {
@@ -16,6 +50,8 @@ function cariModus(arr) {
             myMap.set(arr[i], 1);
         }
     }
+
+    console.log(myMap);
 
     let max = 0;
     let index = 0;
