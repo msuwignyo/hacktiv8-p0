@@ -53,6 +53,8 @@ function cariModus(arr) {
 
     console.log(myMap);
 
+    if (myMap.size == 1) { return -1; }
+
     let max = 0;
     let index = 0;
     for (let key of myMap.keys()) {
@@ -61,6 +63,8 @@ function cariModus(arr) {
             index = key;
         }
     }
+    
+    // if (diff === 0) { return -1; }
 
     return index;
 }

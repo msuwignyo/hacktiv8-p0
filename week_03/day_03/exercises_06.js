@@ -10,6 +10,7 @@ function isPalindrome(num) {
 }
 
 function angkaPalindrome(num) {
+    num++;
     while (!isPalindrome(num)) {
         num++;
     }
