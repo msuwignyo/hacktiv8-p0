@@ -1,42 +1,10 @@
 // Logic Challenge - Mencari Modus
-// NOT FINISH YET!
 
 function cariModus(arr) {
 
-    // let dict = null;
-
-    // for (let i = 0; i < arr.length; i++) {
-    //     // inisialisasi dict jika masih null
-    //     if (dict === null) { dict = {}; }
-
-    //     // cek apakah kunci ada?
-    //     // kalau ada, nilainya tambah 1
-    //     // kalau tidak ada, masukkan kunci dan nilai 1
-    //     if (dict[arr[i]] === undefined) {
-    //         dict[arr[i]] = 1;
-    //     } else {
-    //         dict[arr[i]]++;
-    //     }
-    // }
-
-    // console.log(dict);
-    // let max_value = [];
-    // let max_index = [];
-    // for (let key in dict) {
-    //     if (max_value == 0 || max_value[0] < dict[key]) { 
-    //         max_value.push(dict[key]);
-    //         max_index.push(key);
-    //     }
-    // }
-
-    // console.log(max_value);
-    // console.log(max_index);
-    // console.log();
-
-    
-
     let myMap = null;
 
+    // console.log(selisih);
     for (let i = 0; i < arr.length; i++) {
         // inisialisasi myMap kalau masih null
         if (myMap === null) { myMap = new Map(); }
@@ -51,8 +19,7 @@ function cariModus(arr) {
         }
     }
 
-    console.log(myMap);
-
+    // kalau size-nya cuman 1, ga ada modus berarti
     if (myMap.size == 1) { return -1; }
 
     let max = 0;
@@ -63,8 +30,16 @@ function cariModus(arr) {
             index = key;
         }
     }
-    
-    // if (diff === 0) { return -1; }
+
+    let keys = [...myMap.keys()];
+    let sum = 0;
+    for (let i = 0; i < keys.length; i++) {
+        sum += myMap.get(keys[i]);
+    }
+
+    if (sum/myMap.size === myMap.get(keys[0])) {
+        return -1;
+    }
 
     return index;
 }
