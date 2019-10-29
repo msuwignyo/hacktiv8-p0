@@ -1,3 +1,6 @@
+// Week 03 - Exercises 06
+// Palindrome Angka
+
 function isPalindrome(num) {
     let buff = num.toString();
     let n = buff.length;

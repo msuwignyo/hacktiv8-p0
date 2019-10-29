@@ -1,4 +1,5 @@
-// Logic Challenge - Tentukan Deret Geometri
+// Week 03 - Exercises 12
+// Deret Geometri
 
 function tentukanDeretGeometri(arr) {
     let skalar = null;

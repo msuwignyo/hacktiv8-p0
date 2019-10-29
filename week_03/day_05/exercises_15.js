@@ -1,4 +1,5 @@
-// Logic Challenge - Mengelompokkan Hewan
+// Week 03 - Exercises 15
+// Mengelompokkan Hewan
 
 function groupAnimals(animals) {
 

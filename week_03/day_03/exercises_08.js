@@ -1,3 +1,6 @@
+// Week 03 - Exercises 08
+// Pasangan Angka Terbesar
+
 function pasanganTerbesar(num) {
     let str = num.toString();
     let max = 0;

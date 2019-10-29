@@ -1,4 +1,5 @@
-// Logic Challenge - Palindrome
+// Week 03 - Exercises 05
+// Palindrome
 
 function palindrome(kata) {
     let n = kata.length;

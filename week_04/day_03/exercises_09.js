@@ -1,23 +1,24 @@
 function checkAB(num) {
-    
-    // to store location a or b
-    let loc = [];
 
-    for (let ix = 0; ix < num.length; ix++) {
-        if (num[ix] === 'a' || num[ix] === 'b') {
-            loc.push(ix);
-        }
+    // index 0 -- a, index 1 -- b
+    let location = [[], []];
+
+    for (let i = 0; i < num.length; i++) {
+        if (num[i] === 'a') { location[0].push(i)}
+        if (num[i] === 'b') { location[1].push(i)}
     }
 
-    for (let char1 of loc) {
-        for (let char2 of loc) {
-            if (Math.abs(char1 - char2) === 4) {
-                return true;
+    let result = false;
+    
+    for (let loc_a of location[0]) {
+        for (let loc_b of location[1]) {
+            if (Math.abs(loc_a - loc_b) === 4) {
+                result = true;
             }
         }
     }
-    
-    return false;
+
+    return result;
 
 }
 

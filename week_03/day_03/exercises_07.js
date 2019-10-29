@@ -1,3 +1,6 @@
+// Week 03 - Exercises 07
+// Hitung Jumlah Angka
+
 function hitungJumlahKata(kalimat) {
     let arr = kalimat.split(' ');
     return arr.length;

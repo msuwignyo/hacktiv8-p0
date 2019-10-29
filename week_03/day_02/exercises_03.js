@@ -1,4 +1,5 @@
-// Melakukan Looping Data Array
+// Week 03 - Exercises 03
+// Tatangan Array 2 (Melakukan Looping Data Array)
 
 function dataHandling(input) {
     for (let i = 0; i < input.length; i++) {

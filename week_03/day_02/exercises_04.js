@@ -1,4 +1,5 @@
-// Menggunakan Built-in Function pada Array
+// Week 03 - Exercises 04
+// Tantangan Array 3 (Menggunakan Built-in Function pada Array)
 
 function dataHandling2(input) {
     // buang hobi
@@ -30,6 +31,7 @@ function dataHandling2(input) {
         case '10':  console.log('Oktober'); break;
         case '11':  console.log('November'); break;
         case '12':  console.log('Desember'); break;
+        default  :  break;
     }
 
     // sort menurun, warning fungsi sort inplace item-nya

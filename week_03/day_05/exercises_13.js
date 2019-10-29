@@ -1,4 +1,5 @@
-// Logic Challenge - Target Terdekat
+// Week 03 - Exercises 13
+// Target Terdekat
 
 function targetTerdekat(arr) {
     let index_o = [];

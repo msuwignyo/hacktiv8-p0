@@ -1,4 +1,5 @@
-// Logic Challenge - Mencari Mean
+// Week 03 - Exercises 09
+// Cari Mean
 
 function cariMean(arr) {
     let sum = 0;

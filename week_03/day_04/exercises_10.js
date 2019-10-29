@@ -1,4 +1,5 @@
-// Logic Challenge - Perkalian Unik
+// Week 03 - Exercises 10
+// Perkalian Unik
 
 function perkalianUnik(arr) {
     let n = arr.length;

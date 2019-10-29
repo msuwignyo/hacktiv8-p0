@@ -1,4 +1,5 @@
-// Logic Challenge - Mengelompokkan Angka
+// Week 03 - Exercises 14
+// Mengelompokkan Angka
 
 function mengelompokkanAngka(arr) {
     let even = [];

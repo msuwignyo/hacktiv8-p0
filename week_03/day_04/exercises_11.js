@@ -1,4 +1,5 @@
-// Logic Challenge - Tentukan Deret Aritmatika
+// Week 03 - Exercises 11
+// Deret Aritmatika
 
 function tentukanDeretAritmatika(arr) {
     let selisih = null;

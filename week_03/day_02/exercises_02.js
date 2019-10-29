@@ -1,4 +1,5 @@
-// Mengakses Nilai Dalam Array
+// Week 03 - Exercises 02
+// Tantangan Array 1 (Mengakses Nilai Dalam Array)
 
 function balikString(str) {
     let n = str.length;
