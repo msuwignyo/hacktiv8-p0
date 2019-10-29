@@ -1,28 +1,28 @@
-function isNeedUpdate(database, person) {
-    return database.score < person.score;
+function isGraduate(person) {
+    return person.score >= 75;
 }
 
-function highestScore(students) {
-
+function graduates(students) {
     let result = {};
 
     for (let person of students) {
 
-        if (result[person.class] === undefined ||
-            isNeedUpdate(result[person.class], person)) {
-            result[person.class] = {
+        if (result[person.class] === undefined) {
+            result[person.class] = [];
+        }
+
+        if (isGraduate(person)) {
+            result[person.class].push({
                 name: person.name,
                 score: person.score
-            };
+            });
         }
     }
 
     return result;
-
 }
 
-// TEST CASE
-console.log(highestScore([{
+console.log(graduates([{
         name: 'Dimitri',
         score: 90,
         class: 'foxes'
@@ -45,12 +45,16 @@ console.log(highestScore([{
 ]));
 
 // {
-//   foxes: { name: 'Dimitri', score: 90 },
-//   wolves: { name: 'Alexei', score: 85 }
+//   foxes: [
+//     { name: 'Dimitri', score: 90 }
+//   ],
+//   wolves: [
+//     { name: 'Alexei' , score: 85 },
+//     { name: 'Anastasia', score: 78 }
+//   ]
 // }
 
-
-console.log(highestScore([{
+console.log(graduates([{
         name: 'Alexander',
         score: 100,
         class: 'foxes'
@@ -78,10 +82,17 @@ console.log(highestScore([{
 ]));
 
 // {
-//   foxes: { name: 'Alexander', score: 100 },
-//   wolves: { name: 'Alisa', score: 76 },
-//   tigers: { name: 'Viktor', score: 80 }
+//   foxes: [
+//     { name: 'Alexander', score: 100 },
+//     { name: 'Vladimir', score: 92 }
+//   ],
+//   wolves: [
+//     { name: 'Alisa', score: 76 },
+//   ],
+//   tigers: [
+//     { name: 'Viktor', score: 80 }
+//   ]
 // }
 
 
-console.log(highestScore([])); // {}
+console.log(graduates([])); //{}
