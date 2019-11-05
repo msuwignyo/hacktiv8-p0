@@ -1,4 +1,5 @@
-// Logic Challenge - Digit Perkalian Minimum
+// Week 04 - Exercises 06
+// Digit Perkalian Minimum
 
 function digitPerkalianMinimum(angka) {
     

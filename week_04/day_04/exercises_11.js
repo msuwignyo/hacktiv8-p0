@@ -1,3 +1,6 @@
+// Week 04 - Exercises 11
+// Shopping Time!
+
 function belanja(money) {
 
     const listHarga = [

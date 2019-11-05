@@ -1,4 +1,5 @@
-// Logic Challenge - Mencari Modus
+// Week 04 - Exercises 04
+// Cari Modus
 
 function cariModus(arr) {
 

@@ -1,3 +1,6 @@
+// Week 04 - Exercises 09
+// Cek AB
+
 function checkAB(num) {
 
     // index 0 -- a, index 1 -- b

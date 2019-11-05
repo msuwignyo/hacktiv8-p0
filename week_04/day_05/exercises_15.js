@@ -1,3 +1,6 @@
+// Week 04 - Exercises 15
+// Highest Score
+
 function isNeedUpdate(database, person) {
     return database.score < person.score;
 }

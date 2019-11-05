@@ -1,3 +1,6 @@
+// Week 04 - Exercises 05
+// Ubah Huruf
+
 function ubahHuruf(kata) {
 
     let res = '';

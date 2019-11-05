@@ -1,4 +1,5 @@
-// Logic Challenge - Faktor Persekutuan Terbesar
+// Week 04 - Exercises 02
+// Faktor Persekutuan Terbesar
 
 function findFactors(num) {
     let res = [];

@@ -1,4 +1,5 @@
-// Logic Challenge - Mencari Median
+// Week 04 - Exercises 03
+// Cari Median
 
 function cariMedian(arr) {
     if (arr.length % 2 == 0) { // kalau besar array genap

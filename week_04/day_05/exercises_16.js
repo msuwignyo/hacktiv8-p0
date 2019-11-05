@@ -1,3 +1,6 @@
+// Week 04 - Exercises 16
+// Graduates
+
 function isGraduate(person) {
     return person.score >= 75;
 }

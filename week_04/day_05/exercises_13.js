@@ -1,3 +1,6 @@
+// Week 04 - Exercises 13
+// Deep Sum
+
 function deepSum(arr, depth = 0) {
 
     // proteksi jika array kosong di awal

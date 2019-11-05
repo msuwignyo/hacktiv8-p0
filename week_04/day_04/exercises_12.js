@@ -1,3 +1,6 @@
+// Week 04 - Exercises 12
+// Toko X
+
 function createInfo(arr) {
     let res = [];
     for (let item of arr) {

@@ -1,3 +1,6 @@
+// Week 04 - Exercises 08
+// Tukar Ukuran
+
 function isUpperCase(char) {
     // 'A' -- 65
     // 'Z' -- 90

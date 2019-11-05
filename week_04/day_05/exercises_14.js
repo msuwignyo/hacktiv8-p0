@@ -1,3 +1,6 @@
+// Week 04 - Exercises 14
+// Naik Angkot
+
 function naikAngkot(arrPenumpang) {
     
     let rute = ['A', 'B', 'C', 'D', 'E', 'F'];

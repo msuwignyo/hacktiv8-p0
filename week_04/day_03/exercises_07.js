@@ -1,3 +1,6 @@
+// Week 04 - Exercises 07
+// Urutkan Abjad
+
 function strToArray(str) {
     let res = [];
     for (let char of str) {

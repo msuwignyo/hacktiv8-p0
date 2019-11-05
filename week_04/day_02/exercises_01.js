@@ -1,4 +1,5 @@
-// Logic Challenge - Angka Prima
+// Week 04 - Exercises 01
+// Angka Prima
 
 function angkaPrima(angka) {
     // this is a naive solution, forgive me
