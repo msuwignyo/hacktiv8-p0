@@ -2,11 +2,12 @@
 // Cari Median
 
 function cariMedian(arr) {
+    arr.sort((a, b) => a - b);
     if (arr.length % 2 == 0) { // kalau besar array genap
         let posisiTengah = arr.length / 2;
         return (arr[posisiTengah - 1] + 
                 arr[posisiTengah]) / 2;
-    } else {
+    } else { // kalau besar array ganjil
         let posisiTengah = Math.ceil(arr.length / 2);
         return arr[posisiTengah - 1];
     }

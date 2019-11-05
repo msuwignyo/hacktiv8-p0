@@ -9,6 +9,10 @@ function birthYear(num) {
 }
 
 function changeMe(arr) {
+
+    // proteksi input
+    if (arr == 0) { console.log(''); }
+
     for (let i = 0; i < arr.length; i++) {
         let obj = {
             firstName: arr[i][0],

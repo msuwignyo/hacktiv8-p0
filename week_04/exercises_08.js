@@ -2,10 +2,7 @@
 // Tukar Ukuran
 
 function isUpperCase(char) {
-    // 'A' -- 65
-    // 'Z' -- 90
-    // 'a' -- 97
-    // 'z' -- 122
+    // 'A' -- 65, 'Z' -- 90
     return char.charCodeAt() >= 65 &&
            char.charCodeAt() <= 90;
 }

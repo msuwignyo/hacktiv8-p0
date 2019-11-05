@@ -1,31 +1,10 @@
 // Week 04 - Exercises 07
 // Urutkan Abjad
 
-function strToArray(str) {
-    let res = [];
-    for (let char of str) {
-        res.push(char);
-    }
-
-    return res;
-}
-
-function arrayToStr(arr) {
-    let res = '';
-    for (let item of arr) {
-        res += item;
-    }
-
-    return res;
-}
-
 function urutkanAbjad(str) {
-    
-    let arr = strToArray(str);
-
-    arr.sort();
-
-    return arrayToStr(arr);
+    return str.split('')  // string to array
+              .sort()     // sort the array
+              .join('');  // array to string
 }
 
 // TEST CASES
