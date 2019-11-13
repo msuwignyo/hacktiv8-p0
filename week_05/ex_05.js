@@ -1,4 +1,4 @@
-// Week 05 - Exercises 17
+// Week 05 - Exercises 05
 // Kali Terus Rekursif
 
 function intToString(angka) {

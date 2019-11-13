@@ -1,3 +1,6 @@
+// Week 05 - Exercises 06
+// Damage Calculation
+
 function attack(damage) {
     return damage - 2;
 }

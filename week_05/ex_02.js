@@ -1,4 +1,4 @@
-// Week 05 - Exercises 14
+// Week 05 - Exercises 02
 // Password Generator
 
 function changeVocals(str) {

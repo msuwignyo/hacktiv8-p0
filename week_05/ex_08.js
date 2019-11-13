@@ -1,3 +1,6 @@
+// Week 05 - Exercises 08
+// Hapus Simbol
+
 function hapusSimbol(str) {
   const regex = /[a-z0-9]/g;
   return str.match(regex).join('');

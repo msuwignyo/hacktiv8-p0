@@ -1,4 +1,4 @@
-// Week 05 - Exercises 13
+// Week 05 - Exercises 01
 // Most Frequent Largest Numbers
 
 function sorting(arrNumber) {

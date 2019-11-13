@@ -1,4 +1,4 @@
-// Week 05 - Exercises 16
+// Week 05 - Exercises 04
 // Total Digit Rekursif
 
 function totalDigitRekursif(angka) {

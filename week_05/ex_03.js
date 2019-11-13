@@ -1,4 +1,4 @@
-// Week 05 - Exercises 15
+// Week 05 - Exercises 03
 // Makan Terus Rekursif
 
 function makanTerusRekursif(waktu) {

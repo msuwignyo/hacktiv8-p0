@@ -1,3 +1,6 @@
+// Week 05 - Exercises 07
+// Melee Ranged Grouping
+
 function meleeRangedGrouping(str) {
     
     if (str == 0) {
