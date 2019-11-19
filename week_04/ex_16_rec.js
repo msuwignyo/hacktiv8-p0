@@ -5,25 +5,26 @@ function isGraduate(person) {
   return person.score >= 75;
 }
 
-function graduates(students, result = {}) {
+function graduates(students) {
   if (students == 0) {
-    return result;
+    return {};
   }
 
-  const person = students.shift();
+  const person = students.pop();
+  const out = graduates(students);
 
-  if (result[person.class] === undefined) {
-    result[person.class] = [];
+  if (out[person.class] === undefined) {
+    out[person.class] = [];
   }
 
   if (isGraduate(person)) {
-    result[person.class].push({
+    out[person.class].push({
       name: person.name,
       score: person.score
     });
   }
 
-  return graduates(students, result);
+  return out;
 }
 
 console.log(graduates([{
