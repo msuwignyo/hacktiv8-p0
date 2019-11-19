@@ -22,39 +22,33 @@
  * 
  */
 
-function cariKemiripan (arr, kata) {
+function isPatternHasFound(kata, pattern) {
+  if (kata.length < pattern.length) {
+    return false;
+  }
 
-  /**
-   * ALGORITMA:
-   * 
-   * cariKemiripan(arr, kata):
-   *   ans = []
-   *   for i = 0 to arr.length
-   *     for j = 0 to arr[i].length - kata + 1
-   *       if arr[i][j..j+kata-1] == kata
-   *         ans.push(arr[i])
-   *         break
-   */
-
-  let ans = []
-
-  for (let item of arr) {
-    for (let i = 0; i < item.length - kata.length + 1; i++) {
-      let isSame = true
-      for (let j = 0; j < kata.length; j++) {
-        if (item[i + j] !== kata[j]) {
-          isSame = false
-        }
-      }
-
-      if (isSame) {
-        ans.push(item);
-        break;
-      }
+  for (let i = 0; i < pattern.length; i++) {
+    if (kata[i] !== pattern[i]) {
+      return isPatternHasFound(kata.slice(1), pattern);
     }
   }
 
-  return ans;
+  return true;
+}
+
+function cariKemiripan(arr, kata) {
+  if (arr == 0) {
+    return [];
+  }
+
+  const temp = arr.shift();
+  const out = cariKemiripan(arr, kata);
+
+  if (isPatternHasFound(temp, kata)) {
+    out.unshift(temp);
+  }
+
+  return out;
 }
 
 console.log(cariKemiripan(['bola', 'ola ramlan', 'sholat', 'gajah', 'fanta'], 'ola'))
