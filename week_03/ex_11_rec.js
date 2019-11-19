@@ -10,11 +10,10 @@ function tentukanDeretAritmatika(arr, a=undefined) {
 
   if (a === undefined || (arr[0] - temp) === a) {
     a = arr[0] - temp;
-  } else {
-    return false;
+    return tentukanDeretAritmatika(arr, a);
   }
-
-  return tentukanDeretAritmatika(arr, a);
+  
+  return false;
 }
 
 // TEST CASES
