@@ -4,7 +4,7 @@
 function isPalindrome(num) {
   let temp = String(num)
 
-  if (temp.length === 1) {
+  if (temp.length === 1 || temp.length === 0) {
     return true;
   }
 
