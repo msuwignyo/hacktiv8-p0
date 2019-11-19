@@ -6,15 +6,11 @@ function sumArray(arr) {
     return 0;
   }
 
-  const temp = arr.shift();
-
-  return temp + sumArray(arr);
+  return arr[0] + sumArray(arr.slice(1));
 }
 
 function cariMean(arr) {
-  const n = arr.length;
-  
-  return Math.ceil(sumArray(arr) / n);
+  return Math.ceil(sumArray(arr) / arr.length);
 }
 
 // TEST CASES
