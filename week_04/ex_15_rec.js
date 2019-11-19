@@ -5,22 +5,23 @@ function isNeedUpdate(database, person) {
   return database.score < person.score;
 }
 
-function highestScore(students, result = {}) {
+function highestScore(students) {
   if (students == 0) {
-    return result;
+    return {};
   }
-  
-  let temp = students.shift();
 
-  if (result[temp.class] === undefined ||
-    isNeedUpdate(result[temp.class], temp)) {
-    result[temp.class] = {
+  const temp = students.pop();
+  const out = highestScore(students);
+
+  if (out[temp.class] === undefined ||
+      isNeedUpdate(out[temp.class], temp)) {
+    out[temp.class] = {
       name: temp.name,
       score: temp.score
-    };
+    }
   }
-
-  return highestScore(students, result);
+  
+  return out;
 }
 
 // TEST CASE
