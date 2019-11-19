@@ -20,20 +20,16 @@
  * - DILARANG MENGGUNAKAN BUILT IN FUNCTION .reverse()
  */
 
-function numberSpreader(num, pointer=num, maju=false) {
+function numberSpreader(num) {
   if (typeof num !== 'number' || num < 1) {
     return 'invalid number';
   }
-  
-  if (maju) {
-    return (pointer < num) ?
-        [pointer, ...numberSpreader(num, pointer+1, true)] :
-        [pointer];
+
+  if (num === 1) {
+    return [1];
   }
 
-  return (pointer > 1) ?
-      [pointer, ...numberSpreader(num, pointer-1, false)] :
-      [pointer, ...numberSpreader(num, pointer+1, true)]
+  return [num, ...numberSpreader(num - 1), num];
 }
 
 console.log(numberSpreader(5)); // [ 5, 4, 3, 2, 1, 2, 3, 4, 5 ]
