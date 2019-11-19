@@ -5,24 +5,21 @@ function perkalian(arr) {
   if (arr == 0) {
     return 1;
   }
-  
-  const temp = arr.shift();
-  
-  return temp * perkalian(arr);
+
+  return arr[0] * perkalian(arr.slice(1));
 }
 
-function perkalianUnik(arr, out=[]) {
-  if (out.length === arr.length) {
-    return out;
+function perkalianUnik(arr) {
+  let temp = 0;
+  let out = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    temp = arr.shift();
+    out.push(perkalian(arr));
+    arr.push(temp);
   }
 
-  const temp = arr.shift();
-  const result = perkalian([...arr])
-
-  out.push(result);
-  arr.push(temp);
-
-  return perkalianUnik(arr, out);
+  return out;
 }
 
 // TEST CASES
