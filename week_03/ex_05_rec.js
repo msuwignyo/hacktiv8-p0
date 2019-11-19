@@ -2,8 +2,7 @@
 // Palindrome
 
 function palindrome(kata) {
-
-  if (kata.length === 1) {
+  if (kata.length === 1 || kata.length === 0) {
     return true;
   }
 
@@ -13,7 +12,7 @@ function palindrome(kata) {
   if (charDepan === charBelakang) {
     return palindrome(kata.slice(1, kata.length - 1));
   }
-  
+
   return false;
 }
 
