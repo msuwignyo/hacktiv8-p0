@@ -1,19 +1,35 @@
 // Week 03 - Exercises 08
 // Pasangan Angka Terbesar
 
-function pasanganTerbesar(num, maxNum=Number.NEGATIVE_INFINITY) {
+// function pasanganTerbesar(num, maxNum=Number.NEGATIVE_INFINITY) {
+//   if (num < 10) {
+//     return maxNum;
+//   }
+
+//   const temp = String(num);
+//   const [a, b] = temp.slice(0, 2);
+
+//   if (maxNum < Number(a + b)) {
+//     maxNum = Number(a + b);
+//   }
+
+//   return pasanganTerbesar(Number(temp.slice(1)), maxNum);
+// }
+
+function pasanganTerbesar(num) {
   if (num < 10) {
-    return maxNum;
+    return 0;
   }
 
   const temp = String(num);
   const [a, b] = temp.slice(0, 2);
+  const maxNum = pasanganTerbesar(Number(temp.slice(1)));
 
   if (maxNum < Number(a + b)) {
-    maxNum = Number(a + b);
+    return Number(a + b);
   }
 
-  return pasanganTerbesar(Number(temp.slice(1)), maxNum);
+  return maxNum;
 }
 
 // TEST CASES
