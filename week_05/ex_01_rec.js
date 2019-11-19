@@ -21,11 +21,10 @@ function getTotal(arrNumber, maxNumber = undefined, count = 0) {
 
   if (maxNumber === temp) {
     count++;
-  } else {
-    return `angka paling besar adalah ${maxNumber} dan jumlah kemunculan sebanyak ${count} kali`;
+    return getTotal(arrNumber, maxNumber, count)
   }
-
-  return getTotal(arrNumber, maxNumber, count)
+  
+  return `angka paling besar adalah ${maxNumber} dan jumlah kemunculan sebanyak ${count} kali`;
 }
 
 function mostFrequentLargestNumbers(arrNumber) {
