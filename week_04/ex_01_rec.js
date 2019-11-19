@@ -2,7 +2,6 @@
 // Angka Prima (Recursive Version)
 
 function angkaPrima(angka, divider=2) {
-
     if (angka < 2) { 
         return false; 
     }
