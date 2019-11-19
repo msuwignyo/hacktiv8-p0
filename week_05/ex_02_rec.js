@@ -8,6 +8,7 @@ function changeVocals(str) {
 
   const vowels = ['a', 'A', 'i', 'I', 'u', 'U', 'e', 'E', 'o', 'O'];
   let temp = str[0];
+  
   for (let v of vowels) {
     if (temp === v) {
       temp = String.fromCharCode(temp.charCodeAt() + 1);
@@ -37,7 +38,6 @@ function isUpperCase(char) {
 }
 
 function setLowerUpperCase(str) {
-
   let temp = str.split('');
   temp = temp.map((item) => {
     if (isLowerCase(item)) {
@@ -62,7 +62,6 @@ function removeSpaces(str) {
 }
 
 function passwordGenerator(name) {
-
   // proteksi
   if (name.length < 5) {
     return 'Minimal karakter yang diinputkan adalah 5 karakter';
@@ -72,6 +71,7 @@ function passwordGenerator(name) {
   ans = reverseWord(ans);
   ans = setLowerUpperCase(ans);
   ans = removeSpaces(ans);
+
   return ans;
 }
 
