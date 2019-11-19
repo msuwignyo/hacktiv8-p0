@@ -10,11 +10,10 @@ function tentukanDeretGeometri(arr, a) {
 
   if (a === undefined || (arr[0] / temp) === a) {
     a = arr[0] / temp;
-  } else {
-    return false;
+    return tentukanDeretGeometri(arr, a);
   }
 
-  return tentukanDeretGeometri(arr, a);
+  return false;
 }
 
 // TEST CASES
