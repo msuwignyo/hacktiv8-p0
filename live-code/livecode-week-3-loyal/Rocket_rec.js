@@ -25,22 +25,25 @@ function isBothEven(a, b) {
   return a % 2 == 0 && b % 2 == 0;
 }
 
-function draw(num, out='', i=0) {
+function draw(num, i = 0) {
   if (i === num) {
-    return out;
+    return '';
   }
+
+  let out = '';
 
   for (let j = 0; j < num; j++) {
     if (isBothEven(i, j) || isBothOdd(i, j)) {
       out += '*';
-    } else {
-      out += ' ';
+      continue;
     }
+
+    out += ' ';
   }
 
   out += '\n';
 
-  return draw(num, out, i+1);
+  return out + draw(num, i+1);
 }
 
 function checkerBoard(num) {
