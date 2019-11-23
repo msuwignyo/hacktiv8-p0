@@ -1,0 +1,21 @@
+.form-container {
+  text-align: center;
+  width:70%;
+  margin: 0 auto;
+}
+
+#main-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+input[type=submit] {
+  width: 70%;
+  margin: auto;
+  grid-column: 1 / 3;
+}
+
+#main-form > label {
+  margin: auto;
+}
